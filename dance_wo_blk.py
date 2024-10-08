@@ -51,7 +51,7 @@ async def subtask():
 async def subtask2():
     for count in range(1):
         await wait(1)
-        await prime_hub.speaker.play_notes()
+        await prime_hub.speaker.play_notes(get_star_wars_notes())
 
 async def main():
     drive_base.use_gyro(True)
