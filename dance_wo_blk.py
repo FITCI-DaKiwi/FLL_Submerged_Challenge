@@ -26,6 +26,28 @@ def get_star_wars_notes():
     x10 = ["G5/12", "F5/12", "Eb5/12", "Bb5/2", "A5/4", "G5/8", "R/8", "G4/12", "G4/12", "G4/12", "G4/4"]
     test = x0 + x1 + x2 + x2 + x3 + x1 + x2 + x2 + x3 + x4 + x5 + x4 + x6 + x4 + x7 + x8 + x9 + x0 + x1 + x2 + x2 + x3 + x1 + x2 + x10
     return test
+
+# Code written by Angela X. 
+# Music was aranged by D. Cheston
+# The letter is the pitch. The first number is the octave.
+# The second number is how long the note is held.
+# Ex:"B4/8" 
+# B4: The pitch B in the 4th octave. In scientific pitch notation, (and on the
+# piano and other istruments) this is just below middle C (C4).
+#/8: Indicates that the note should be played as an eighth note, 
+# meaning it lasts for one-eighth the duration of a whole note.  
+def get_pirates_of_the_caribbean_notes():
+    x0 = ["A4/8", "C4/8"]
+    x1 = ["D4/4", "D4/4", "D4/8", "E4/8", "F4/4", "F4/4", "F4/8", "G4/8", "E4/4", "E4/4", "D4/8", "C4/8", "C4/8", "D4/8", "R/4"]
+    x2 = ["A4/8", "C4/8", "D4/4", "D4/4", "D4/8", "E4/8", "F4/4", "F4/4", "F4/8", "G4/8", "E4/4", "E4/4", "D4/8", "C4/8", "D4/2"]
+    x3 = ["A4/8", "C4/8", "D4/4", "D4/4", "D4/8", "F4/8", "G4/4", "G4/4", "G4/8", "A4/8", "Bb4/4", "Bb4/4", "A4/8", "G4/8", "A4/8", "D4/8", "R/4"]
+    x4 = ["D4/8", "E4/8", "F4/4", "F4/4", "G4/4", "A4/2"]
+    x5 = ["D4/8", "F4/8", "E4/4", "E4/4", "F4/8", "D4/8", "E4/2", "R/4"]
+
+    # Combining the segments into a test list
+    test = x0 + x1 + x2 + x3 + x4 + x5 
+    return test
+
     
 async def subtask():
     print('DaKiwi')
@@ -51,7 +73,7 @@ async def subtask():
 async def subtask2():
     for count in range(1):
         await wait(1)
-        await prime_hub.speaker.play_notes(get_star_wars_notes())
+        await prime_hub.speaker.play_notes(get_pirates_of_the_caribbean_notes())
 
 async def main():
     drive_base.use_gyro(True)
