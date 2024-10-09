@@ -25,3 +25,4 @@ Back Motor: F (Large Motor)
 
 The button on the lego hub is on the right.
 
+For this year, the taller the robot the better, as
