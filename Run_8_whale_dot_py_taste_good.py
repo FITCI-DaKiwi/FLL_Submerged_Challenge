@@ -21,6 +21,3 @@ drive_base.straight(605)
 drive_base.turn(71)
 drive_base.settings(straight_speed=90)
 drive_base.straight(330)
-# fish whale and backing out
-drive_base.settignss(straight_speed=150)
-drive_base.straight(-330)
