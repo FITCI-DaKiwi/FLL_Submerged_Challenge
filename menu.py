@@ -8,20 +8,12 @@ hub = PrimeHub()
 
 
 # Let's offer these menu options. You can add as many as you like.
-menu_options = ("1", "2", "3","4","5","6","7","M")
+menu_options = ("1", "2", "3", "4", "5", "6", "7", "8")
 
 # Normally, the center button stops the program. But we want to use the
 # center button for our menu. So we can disable the stop button.
 
 pressed = []
-#while True:
-#col = hub.colorSensor.color()
- # if col == Color.SENSOR_RED:
-  #   import test
-  #  elif col == Color.SENSOR_BLUE:
-   #  import test2
-
-
 hub.system.set_stop_button(None)
 menu_index = 0
 
@@ -56,21 +48,18 @@ hub.system.set_stop_button(Button.CENTER)
 # Based on the selection, choose a program.
 selected = menu_options[menu_index]
 if selected == "1":
-    import Mission1_taotao
+    import Run_No_1_Collection_da_stuff_or_da_coral_krill_and_completing_mission_8_the_crab_to_the_artificial_habitat_for_theFood
 elif selected == "2":
-    import test2
+    import Run_No_2_Second_run_Sonar_green_circle
 elif selected == "3":
-    import test3
+    import whale 
 elif selected == "4":
-    import test  
-elif selected == "5":
-    import test  
+    import run_4
+elif selected == "3":
+    import run_5
 elif selected == "6":
-    import test  
+    import run_6
 elif selected == "7":
-    import test  
-elif selected == "M":
-    import Pirates_of_the_Caribbean.py 
-
-
-
+    import run_7
+elif selected == "8":
+    import Run_No_8_whale_dot_py_taste_good
