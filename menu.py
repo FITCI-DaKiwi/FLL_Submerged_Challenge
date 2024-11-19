@@ -48,18 +48,18 @@ hub.system.set_stop_button(Button.CENTER)
 # Based on the selection, choose a program.
 selected = menu_options[menu_index]
 if selected == "1":
-    import Run_No_1_Collection_da_stuff_or_da_coral_krill_and_completing_mission_8_the_crab_to_the_artificial_habitat_for_theFood
+    import Run_1_collection
 elif selected == "2":
-    import Run_No_2_Second_run_Sonar_green_circle
+    import Run_2_Second_run_Sonar_green_circle
 elif selected == "3":
-    import whale 
+    import mission1_Taotao
 elif selected == "4":
-    import run_4
-elif selected == "3":
+    import Kraken
+elif selected == "5":
     import run_5
 elif selected == "6":
     import run_6
 elif selected == "7":
     import run_7
 elif selected == "8":
-    import Run_No_8_whale_dot_py_taste_good
+    import Run_8_whale_dot_py_taste_good
