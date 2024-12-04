@@ -8,7 +8,7 @@ hub = PrimeHub()
 
 
 # Let's offer these menu options. You can add as many as you like.
-menu_options = ("1", "2", "3","4","5")
+menu_options = ("1", "2", "3", "4", "5", "6", "7", "8", "9")
 
 # Normally, the center button stops the program. But we want to use the
 # center button for our menu. So we can disable the stop button.
@@ -63,14 +63,22 @@ selected = menu_options[menu_index]
 menu_index=menu_index+1
 hub.system.storage(0, write=menu_index.to_bytes(1, 'little'))
 if selected == "1":
-    import test2
+    import State_1AJames_Octo_Shipping_lane_complete
 elif selected == "2":
-    import test2
+    import state_2AJames_collect_all_test_11_28_2024
 elif selected == "3":
-    import mission1
+    import Run3_Taotao
 elif selected == "4":
-    import Kraken2 
+    import Run4_Taotao
 elif selected == "5":
-    import test2
+    import State_Run_5_IfMission8IsCompletedFirst
+elif selected == "6":
+    import State_Run_6_Whale_Octopie
+elif selected == "7":
+    import Habitat_Run_LisaFinal_run1_option
+elif selected == "8":
+    import Run_8_Mission_15_and_Delivering_the_Shark_6
+elif selected == "9":
+    import Run_9_whale_dot_py_taste_good
 
 
