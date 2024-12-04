@@ -14,13 +14,6 @@ menu_options = ("1", "2", "3", "4", "5", "6", "7", "8", "9")
 # center button for our menu. So we can disable the stop button.
 
 pressed = []
-#while True:
-#col = hub.colorSensor.color()
- # if col == Color.SENSOR_RED:
-  #   import test
-  #  elif col == Color.SENSOR_BLUE:
-   #  import test2
-
 
 hub.system.set_stop_button(None)
 
@@ -79,6 +72,6 @@ elif selected == "7":
 elif selected == "8":
     import Run_8_Mission_15_and_Delivering_the_Shark_6
 elif selected == "9":
-    import Run_9_whale_dot_py_taste_good
+    import Run_8_whale_dot_py_taste_good
 
 
