@@ -20,8 +20,10 @@ async def main():
     await drive_base.straight(-520)
     await drive_base.turn(55)
     await drive_base.straight(165)
-    await front.run_angle(200, 160)
+    await front.run_angle(200, 120, Stop.BRAKE)
+    drive_base.settings(straight_speed=250)
     await drive_base.straight(-100, Stop.COAST)
+    drive_base.settings(straight_speed=550)
     await drive_base.turn(-75)
     await drive_base.straight(550, Stop.BRAKE)
 
