@@ -14,6 +14,13 @@ menu_options = ("1", "2", "3", "4", "5", "6", "7", "8", "9")
 # center button for our menu. So we can disable the stop button.
 
 pressed = []
+#while True:
+#col = hub.colorSensor.color()
+ # if col == Color.SENSOR_RED:
+  #   import test
+  #  elif col == Color.SENSOR_BLUE:
+   #  import test2
+
 
 hub.system.set_stop_button(None)
 
@@ -56,22 +63,22 @@ selected = menu_options[menu_index]
 menu_index=menu_index+1
 hub.system.storage(0, write=menu_index.to_bytes(1, 'little'))
 if selected == "1":
-    import State_1AJames_Octo_Shipping_lane_complete
+    import State_Run_1_Octo_Shipping_lane_complete_12_05
 elif selected == "2":
-    import state_2AJames_collect_all_test_11_28_2024
+    import State_Run_2_James_collect_all_test_12_05_2024
 elif selected == "3":
-    import Run3_Taotao
+    import State_Run3_Taotao
 elif selected == "4":
-    import Run4_Taotao
+    import State_Run4_Taotao
 elif selected == "5":
-    import State_Run_5_IfMission8IsCompletedFirst
+    import State_Run_5_vessel
 elif selected == "6":
-    import State_Run_6_Whale_Octopie
+    import State_Run_6_Whale_Octopie_12_05
 elif selected == "7":
     import Habitat_Run_LisaFinal_run1_option
 elif selected == "8":
     import Run_8_Mission_15_and_Delivering_the_Shark_6
 elif selected == "9":
-    import Run_8_whale_dot_py_taste_good
+    import Run_9_whale_dot_py_taste_good
 
 
