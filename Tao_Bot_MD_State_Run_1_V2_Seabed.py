@@ -83,6 +83,7 @@ async def right_side_collection():
 async def main():
     drive_base.use_gyro(True)
     print('voltage is', prime_hub.battery.voltage())
+    # DO NOT USE THIS FOR ANY ROBOT OTHER THEN TAOBOT
     await Run_1()
 
 
