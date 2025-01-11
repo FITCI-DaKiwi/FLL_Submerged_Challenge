@@ -42,5 +42,5 @@ async def main():
     print('MA is', prime_hub.battery.current())
     await Run_5()
 
-
+    # works only with tao bot coded with tao bot probably doesnt work on anything else
 run_task(main())
