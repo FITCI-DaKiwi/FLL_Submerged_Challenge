@@ -86,5 +86,5 @@ async def main():
     print('voltage is', prime_hub.battery.voltage())
     await Run_1()
 
-
+    # works only with alex bot, coded with this robot
 run_task(main())
