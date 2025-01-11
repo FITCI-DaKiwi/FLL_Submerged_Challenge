@@ -41,6 +41,7 @@ async def main():
     drive_base.use_gyro(True)
     print('voltage is', prime_hub.battery.voltage())
     print('MA is', prime_hub.battery.current())
+    print('DO NOT USE FOR ANY OTHER ROBOT OTHER THEN TAO BOT)
     await Run_5()
 
 
