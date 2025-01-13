@@ -81,6 +81,9 @@ async def subtask():
     await drive_base.curve(90 / 3, 185 / 3, Stop.NONE)
     await drive_base.turn(-360)
     await drive_base.turn(470)
+    await drive_base.turn(360)
+    await drive_base.turn(-360)
+    await drive_base.curve(100,360)
 
 
 async def subtask2():
