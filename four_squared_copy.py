@@ -4,22 +4,19 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase,
 from pybricks.tools import wait, StopWatch
 
-hub = PrimeHub()
+hub = PrimeHub( )
 left = Motor(Port.A, Direction. COUNTERCLOCKWISE)
 Right = Motor(Port.B, Direction. CLOCKWISE)
 wheel_diameter = 81.6
 axle_distance = 116
-drive_base = DriveBase(left_motor = left, right_motor = Right, wheel_diameter = wheel_diameter, 
-axle_track = axle_distance)
+drive_base = DriveBase(left_motor = left, right_motor = Right, wheel_diameter = wheel_diameter, axle_track = axle_distance)
 
 # The main program starts here.
 
 while True:
-    # Sets up the code for when we need to stop the robot before it hits the wall
+    # While a condition is true, it goes on forever unless stopped by the program
     drive_base.drive(200,0)
     # sets up the drive speed of the robot
-    pass
-    # makes the robot drive forever unless it is stopped by the program
     distance_sensor = UltrasonicSensor(Port.C)
     # Classifies the distance sensor and which port it comes from
     if distance_sensor.distance() < 50:
